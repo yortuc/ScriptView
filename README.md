@@ -6,6 +6,8 @@ ScriptView
 A tiny view control that lets you create sub contols and event handlers dynamically with javascript.
 
 ##Sample Script
+**main.js**
+
 ```js
 log("hello there!")
 
