@@ -15,19 +15,25 @@
 		15D7B8B71CB6AAFA00EAF7B6 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 15D7B8B61CB6AAFA00EAF7B6 /* main.js */; };
 		15D7B8B91CB6F12E00EAF7B6 /* ScriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8B81CB6F12E00EAF7B6 /* ScriptView.swift */; };
 		15D7B8BB1CB6F57A00EAF7B6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15D7B8BA1CB6F57A00EAF7B6 /* .gitignore */; };
+		15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */; };
+		15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8C01CB740A900EAF7B6 /* SVButton.swift */; };
+		15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15D7B8A11CB6AAEF00EAF7B6 /* ScriptView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DynaPage/AppDelegate.swift; sourceTree = "<group>"; };
+		15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = DynaPage/ViewController.swift; sourceTree = "<group>"; };
 		15D7B8A91CB6AAEF00EAF7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		15D7B8AB1CB6AAEF00EAF7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15D7B8AB1CB6AAEF00EAF7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DynaPage/Assets.xcassets; sourceTree = "<group>"; };
 		15D7B8AE1CB6AAEF00EAF7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		15D7B8B01CB6AAEF00EAF7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15D7B8B61CB6AAFA00EAF7B6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		15D7B8B01CB6AAEF00EAF7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DynaPage/Info.plist; sourceTree = "<group>"; };
+		15D7B8B61CB6AAFA00EAF7B6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = DynaPage/main.js; sourceTree = "<group>"; };
 		15D7B8B81CB6F12E00EAF7B6 /* ScriptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptView.swift; sourceTree = "<group>"; };
-		15D7B8BA1CB6F57A00EAF7B6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		15D7B8BA1CB6F57A00EAF7B6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = DynaPage/.gitignore; sourceTree = "<group>"; };
+		15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVTextBox.swift; path = DynaPage/SVTextBox.swift; sourceTree = "<group>"; };
+		15D7B8C01CB740A900EAF7B6 /* SVButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVButton.swift; path = DynaPage/SVButton.swift; sourceTree = "<group>"; };
+		15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVLabel.swift; path = DynaPage/SVLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,10 @@
 		15D7B8981CB6AAEF00EAF7B6 = {
 			isa = PBXGroup;
 			children = (
+				15D7B8C61CB7465500EAF7B6 /* Supporting Files */,
 				15D7B8A31CB6AAEF00EAF7B6 /* ScriptView */,
+				15D7B8C41CB7462200EAF7B6 /* Controls */,
+				15D7B8C51CB7463C00EAF7B6 /* Scripts */,
 				15D7B8A21CB6AAEF00EAF7B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,18 +69,42 @@
 		15D7B8A31CB6AAEF00EAF7B6 /* ScriptView */ = {
 			isa = PBXGroup;
 			children = (
+				15D7B8B81CB6F12E00EAF7B6 /* ScriptView.swift */,
+			);
+			name = ScriptView;
+			path = DynaPage;
+			sourceTree = "<group>";
+		};
+		15D7B8C41CB7462200EAF7B6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */,
+				15D7B8C01CB740A900EAF7B6 /* SVButton.swift */,
+				15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		15D7B8C51CB7463C00EAF7B6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				15D7B8B61CB6AAFA00EAF7B6 /* main.js */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		15D7B8C61CB7465500EAF7B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15D7B8BA1CB6F57A00EAF7B6 /* .gitignore */,
 				15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */,
 				15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */,
 				15D7B8A81CB6AAEF00EAF7B6 /* Main.storyboard */,
 				15D7B8AB1CB6AAEF00EAF7B6 /* Assets.xcassets */,
 				15D7B8AD1CB6AAEF00EAF7B6 /* LaunchScreen.storyboard */,
 				15D7B8B01CB6AAEF00EAF7B6 /* Info.plist */,
-				15D7B8B61CB6AAFA00EAF7B6 /* main.js */,
-				15D7B8B81CB6F12E00EAF7B6 /* ScriptView.swift */,
-				15D7B8BA1CB6F57A00EAF7B6 /* .gitignore */,
 			);
-			name = ScriptView;
-			path = DynaPage;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
+				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
 				15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */,
+				15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */,
 				15D7B8B91CB6F12E00EAF7B6 /* ScriptView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +198,7 @@
 				15D7B8A91CB6AAEF00EAF7B6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = DynaPage;
 			sourceTree = "<group>";
 		};
 		15D7B8AD1CB6AAEF00EAF7B6 /* LaunchScreen.storyboard */ = {
@@ -170,6 +207,7 @@
 				15D7B8AE1CB6AAEF00EAF7B6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = DynaPage;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,6 +335,7 @@
 				15D7B8B51CB6AAEF00EAF7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

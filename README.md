@@ -11,37 +11,42 @@ A tiny view control that lets you create sub contols and event handlers dynamica
 ```js
 log("hello there!")
 
-var firstButton = createButton({
-	title: "Example button",
-	x: 50,
-	y: 100,
-	width: 200,
-	height: 50,
-             
-	click: function() {
-    	log("Button clicked!");
-	}
+
+var firstButton = Button.create({
+  title: "Example button",
+  x: 50,
+  y: 200,
+  width: 200,
+  height: 50,
+
+  click: function() {
+    log("Button clicked!");
+    myLabel.text = "Logging in...";
+  }
 });
+
+firstButton.title = "I changed button title";
 
 log(firstButton.title);
 
-var myTextBox = createTextBox({
-	placeholder: "my textbox",
-	x: 50,
-	y: 150,
-	width: 200,
-	height: 30,
-	                           
-	edited: function(value) {
-		log("textbox edited. value: " + value);
-	}
+var myLabel = Label.create({
+  x: 50,
+  y: 100,
+  width: 200,
+  height: 30,
+  text: "Welcome, please enter your username"
 });
 
-var myLabel = createLabel({
-	x: 50,
-	y: 200,
-	width: 200,
-	height: 30,
-	text: "this is it!"
+var txtUserName = TextBox.create({
+  placeholder: "my textbox",
+  x: 50,
+  y: 150,
+  width: 200,
+  height: 30,
+
+  edited: function(value) {
+    log("txtUserName edited. value: " + value);
+    myLabel.text = "Hello " + txtUserName.text;
+  }
 });
 ```
