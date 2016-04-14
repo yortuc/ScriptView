@@ -28,13 +28,12 @@ var myLabel = Label.create({
 
 var txtUserName = TextBox.create({
   placeholder: "my textbox",
-  x: 50,
-  y: 150,
-  width: 200,
-  height: 30,
+  rect: Rect.create({x: 50, y: 150, width:200, height:30}),
+  edited: userNameEdited
+});
 
-  edited: function(value) {
+var userNameEdited = function(value) {
     log("txtUserName edited. value: " + value);
     myLabel.text = "Hello " + txtUserName.text;
-  }
-});
+}
+

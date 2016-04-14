@@ -10,11 +10,8 @@ import UIKit
 import JavaScriptCore
 
 @objc protocol SVTextBoxExports: JSExport, UITextFieldDelegate {
+    var rect: Rect? {get set }
     var placeholder: String { get set }
-    var x: Int { get set }
-    var y: Int { get set }
-    var width: Int { get set }
-    var height: Int { get set }
     var text: String? {get set }
     
     static func create(textBoxConfig: JSValue) -> SVTextBox
@@ -30,10 +27,8 @@ class SVTextBox: NSObject, SVTextBoxExports {
         }
     }
     
-    dynamic var x:Int = 50
-    dynamic var y:Int = 100
-    dynamic var width:Int = 100
-    dynamic var height:Int = 30
+    dynamic var rect: Rect!
+    
     dynamic var text:String? {
         get {
             return self.textField.text
@@ -52,12 +47,10 @@ class SVTextBox: NSObject, SVTextBoxExports {
         super.init()
         
         let placeholder = textBoxConfig.valueForProperty("placeholder").toString()
-        let x = CGFloat((textBoxConfig.valueForProperty("x")?.toDouble())!)
-        let y = CGFloat((textBoxConfig.valueForProperty("y")?.toDouble())!)
-        let w = CGFloat((textBoxConfig.valueForProperty("width")?.toDouble())!)
-        let h = CGFloat((textBoxConfig.valueForProperty("height")?.toDouble())!)
         
-        textField = UITextField(frame: CGRectMake(x, y, w, h))
+        rect = Rect(rectConfig: textBoxConfig.valueForProperty("rect"))
+        
+        textField = UITextField(frame: rect.cgRect)
         textField.placeholder = placeholder
         textField.font = UIFont.systemFontOfSize(15)
         textField.borderStyle = UITextBorderStyle.RoundedRect

@@ -56,7 +56,7 @@ class SVButton: NSObject, SVButtonExports {
         button.setTitle(title, forState: UIControlState.Normal)
         
         callbackTapped = JSManagedValue(value: click, andOwner: self)
-        button.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(SVButton.buttonTapped(_:)), forControlEvents: .TouchUpInside)
         
         view.addSubview(button)
     }

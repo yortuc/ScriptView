@@ -67,5 +67,7 @@ class ScriptView {
         context.setObject(unsafeBitCast(SVTextBox.self, AnyObject.self), forKeyedSubscript: "TextBox")
         context.setObject(unsafeBitCast(SVLabel.self, AnyObject.self), forKeyedSubscript: "Label")
         context.setObject(unsafeBitCast(SVButton.self, AnyObject.self), forKeyedSubscript: "Button")
+        context.setObject(unsafeBitCast(Rect.self, AnyObject.self), forKeyedSubscript: "Rect")
+
     }
 }

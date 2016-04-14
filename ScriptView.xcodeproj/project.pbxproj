@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159FABF91CBF31E60049941E /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FABF81CBF31E60049941E /* Rect.swift */; };
 		15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */; };
 		15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */; };
 		15D7B8AA1CB6AAEF00EAF7B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D7B8A81CB6AAEF00EAF7B6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		159FABF81CBF31E60049941E /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
 		15D7B8A11CB6AAEF00EAF7B6 /* ScriptView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DynaPage/AppDelegate.swift; sourceTree = "<group>"; };
 		15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = DynaPage/ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 			children = (
 				15D7B8C61CB7465500EAF7B6 /* Supporting Files */,
 				15D7B8A31CB6AAEF00EAF7B6 /* ScriptView */,
-				15D7B8C41CB7462200EAF7B6 /* Controls */,
+				15D7B8C41CB7462200EAF7B6 /* Exposed */,
 				15D7B8C51CB7463C00EAF7B6 /* Scripts */,
 				15D7B8A21CB6AAEF00EAF7B6 /* Products */,
 			);
@@ -75,14 +77,15 @@
 			path = DynaPage;
 			sourceTree = "<group>";
 		};
-		15D7B8C41CB7462200EAF7B6 /* Controls */ = {
+		15D7B8C41CB7462200EAF7B6 /* Exposed */ = {
 			isa = PBXGroup;
 			children = (
+				159FABF81CBF31E60049941E /* Rect.swift */,
 				15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */,
 				15D7B8C01CB740A900EAF7B6 /* SVButton.swift */,
 				15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */,
 			);
-			name = Controls;
+			name = Exposed;
 			sourceTree = "<group>";
 		};
 		15D7B8C51CB7463C00EAF7B6 /* Scripts */ = {
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */,
+				159FABF91CBF31E60049941E /* Rect.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
 				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
 				15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */,
