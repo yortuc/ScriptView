@@ -9,44 +9,24 @@ A tiny view control that lets you create sub contols and event handlers dynamica
 **main.js**
 
 ```js
-log("hello there!")
 
+var myStyles = require('myStyles');
 
-var firstButton = Button.create({
-  title: "Example button",
-  x: 50,
-  y: 200,
-  width: 200,
-  height: 50,
+// this is the final data structure to be rendered by native func Sw.render
 
-  click: function() {
-    log("Button clicked!");
-    myLabel.text = "Logging in...";
-  }
-});
+var myLoginView = { 
+  type: "view", 
+  rect: Rect.create(0,0,500,500), 
+  style: { backgroundColor: "#efefef" },
+  props: { initialCount : 5 },            // will be passed to control.props
+  children: [
+  
+      {type: "label",    rect: Rect.create(0,0,500,40),  props: {text: "Login"} },
+      {type: "textbox",  rect: Rect.create(0,60,300,30), props: {placeholder: "Username"} },
+      {type: "button",   rect: Rect.create(0,80,200,30), props: {text: "Log me in", onClick: function(){} } },
 
-firstButton.title = "I changed button title";
+  ]}
 
-log(firstButton.title);
+Sw.render(myLoginView);
 
-var myLabel = Label.create({
-  x: 50,
-  y: 100,
-  width: 200,
-  height: 30,
-  text: "Welcome, please enter your username"
-});
-
-var txtUserName = TextBox.create({
-  placeholder: "my textbox",
-  x: 50,
-  y: 150,
-  width: 200,
-  height: 30,
-
-  edited: function(value) {
-    log("txtUserName edited. value: " + value);
-    myLabel.text = "Hello " + txtUserName.text;
-  }
-});
 ```

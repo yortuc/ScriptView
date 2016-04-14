@@ -15,6 +15,7 @@ import JavaScriptCore
     var y: Int { get set }
     var width: Int { get set }
     var height: Int { get set }
+    
     var text: String? {get set }
     
     static func create(textBoxConfig: JSValue) -> SVTextBox
