@@ -12,10 +12,7 @@ import JavaScriptCore
 
 @objc protocol SVButtonExports: JSExport, UITextFieldDelegate {
     var title: String { get set }
-    var x: Int { get set }
-    var y: Int { get set }
-    var width: Int { get set }
-    var height: Int { get set }
+    var rect: Rect? {get set }
     
     static func create(buttonBoxConfig: JSValue) -> SVButton
 }
@@ -30,10 +27,7 @@ class SVButton: NSObject, SVButtonExports {
         }
     }
     
-    dynamic var x:Int = 50
-    dynamic var y:Int = 100
-    dynamic var width:Int = 100
-    dynamic var height:Int = 30
+    dynamic var rect: Rect?
     
     // MARK: Private Properties
     static var containerView: UIView?
@@ -44,15 +38,12 @@ class SVButton: NSObject, SVButtonExports {
         super.init()
         
         let title = buttonConfig.valueForProperty("title").toString()
-        let x = CGFloat((buttonConfig.valueForProperty("x")?.toDouble())!)
-        let y = CGFloat((buttonConfig.valueForProperty("y")?.toDouble())!)
-        let w = CGFloat((buttonConfig.valueForProperty("width")?.toDouble())!)
-        let h = CGFloat((buttonConfig.valueForProperty("height")?.toDouble())!)
+        rect = Rect(rectConfig: buttonConfig.valueForProperty("rect"))
         
         let click = buttonConfig.valueForProperty("click")
         
         button = UIButton(type: UIButtonType.System) as UIButton
-        button.frame = CGRectMake(x, y, w, h)
+        button.frame = rect!.cgRect
         button.setTitle(title, forState: UIControlState.Normal)
         
         callbackTapped = JSManagedValue(value: click, andOwner: self)

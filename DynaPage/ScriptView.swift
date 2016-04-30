@@ -62,12 +62,17 @@ class ScriptView {
         SVButton.containerView = view
         SVTextBox.containerView = view
         SVLabel.containerView = view
+        SVView.containerView = view
         
         // classes
         context.setObject(unsafeBitCast(SVTextBox.self, AnyObject.self), forKeyedSubscript: "TextBox")
         context.setObject(unsafeBitCast(SVLabel.self, AnyObject.self), forKeyedSubscript: "Label")
         context.setObject(unsafeBitCast(SVButton.self, AnyObject.self), forKeyedSubscript: "Button")
         context.setObject(unsafeBitCast(Rect.self, AnyObject.self), forKeyedSubscript: "Rect")
-
+        
+        context.setObject(unsafeBitCast(SVView.self, AnyObject.self), forKeyedSubscript: "View")
+        
+        RootView.rect = Rect(cgRect: view.frame)
+        context.setObject(unsafeBitCast(RootView.self, AnyObject.self), forKeyedSubscript: "RootView")
     }
 }

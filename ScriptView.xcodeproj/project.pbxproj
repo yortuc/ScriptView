@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		159FABF91CBF31E60049941E /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FABF81CBF31E60049941E /* Rect.swift */; };
+		159FABFD1CBFB59B0049941E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FABFC1CBFB59B0049941E /* RootView.swift */; };
 		15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */; };
 		15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */; };
 		15D7B8AA1CB6AAEF00EAF7B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D7B8A81CB6AAEF00EAF7B6 /* Main.storyboard */; };
@@ -19,10 +20,14 @@
 		15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */; };
 		15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8C01CB740A900EAF7B6 /* SVButton.swift */; };
 		15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */; };
+		15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEA1CD4A1B0005BE6CC /* SVView.swift */; };
+		15FE2FED1CD4A730005BE6CC /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEC1CD4A730005BE6CC /* Style.swift */; };
+		15FE2FEF1CD515EC005BE6CC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEE1CD515EC005BE6CC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		159FABF81CBF31E60049941E /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		159FABFC1CBFB59B0049941E /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		15D7B8A11CB6AAEF00EAF7B6 /* ScriptView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D7B8A41CB6AAEF00EAF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DynaPage/AppDelegate.swift; sourceTree = "<group>"; };
 		15D7B8A61CB6AAEF00EAF7B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = DynaPage/ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVTextBox.swift; path = DynaPage/SVTextBox.swift; sourceTree = "<group>"; };
 		15D7B8C01CB740A900EAF7B6 /* SVButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVButton.swift; path = DynaPage/SVButton.swift; sourceTree = "<group>"; };
 		15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVLabel.swift; path = DynaPage/SVLabel.swift; sourceTree = "<group>"; };
+		15FE2FEA1CD4A1B0005BE6CC /* SVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVView.swift; path = DynaPage/SVView.swift; sourceTree = "<group>"; };
+		15FE2FEC1CD4A730005BE6CC /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Style.swift; path = DynaPage/Style.swift; sourceTree = "<group>"; };
+		15FE2FEE1CD515EC005BE6CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 		15D7B8981CB6AAEF00EAF7B6 = {
 			isa = PBXGroup;
 			children = (
+				15FE2FEE1CD515EC005BE6CC /* README.md */,
 				15D7B8C61CB7465500EAF7B6 /* Supporting Files */,
 				15D7B8A31CB6AAEF00EAF7B6 /* ScriptView */,
 				15D7B8C41CB7462200EAF7B6 /* Exposed */,
@@ -82,8 +91,11 @@
 			children = (
 				159FABF81CBF31E60049941E /* Rect.swift */,
 				15D7B8BE1CB73DA300EAF7B6 /* SVTextBox.swift */,
+				15FE2FEA1CD4A1B0005BE6CC /* SVView.swift */,
 				15D7B8C01CB740A900EAF7B6 /* SVButton.swift */,
 				15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */,
+				159FABFC1CBFB59B0049941E /* RootView.swift */,
+				15FE2FEC1CD4A730005BE6CC /* Style.swift */,
 			);
 			name = Exposed;
 			sourceTree = "<group>";
@@ -183,13 +195,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159FABFD1CBFB59B0049941E /* RootView.swift in Sources */,
 				15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */,
 				159FABF91CBF31E60049941E /* Rect.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
+				15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */,
 				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
 				15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */,
 				15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */,
 				15D7B8B91CB6F12E00EAF7B6 /* ScriptView.swift in Sources */,
+				15FE2FEF1CD515EC005BE6CC /* README.md in Sources */,
+				15FE2FED1CD4A730005BE6CC /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

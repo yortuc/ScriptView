@@ -1,18 +1,34 @@
 // ScriptView standart library
 
-function Sw() {
+// Auto layout
+
+var Layout = function(param){
+	this.width = param.width;
+	this.height = param.height;
+	this.y = param.y;
 }
 
-//********** actory methods for primitive components **********
+Layout.prototype.centerHorizontal = function(){
 
-sw.prototype.View = function(param) {
-	return {
-		type: "view",
-		style: param.style,
-		children: param.children
-	}
-}
+	var rootRect = RootView.getRect();
 
-Sw.prototype.Button = function(param) {
+	var x = (rootRect.width - this.width)/2;
+
 
 }
+
+/*
+
+	// init layout with constraints
+	var labelLayout = new Layout({y: 50, width: 100, height: 30});
+
+	// apply autolayout
+	labelLayout.centerHorizontal();
+
+	var myLabel = Label.create({
+	  rect: labelLayout.getRect(),
+	  text: "Welcome, please enter your username"
+	});
+*/
+
+module.exports = Layout;

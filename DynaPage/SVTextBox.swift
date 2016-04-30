@@ -22,12 +22,9 @@ class SVTextBox: NSObject, SVTextBoxExports {
     // MARK: Interface Properties
     dynamic var placeholder: String = "Textbox" {
         didSet {
-            print("textbox placeholder changed")
             self.textField.placeholder = placeholder
         }
     }
-    
-    dynamic var rect: Rect!
     
     dynamic var text:String? {
         get {
@@ -37,6 +34,8 @@ class SVTextBox: NSObject, SVTextBoxExports {
             self.textField.text = newValue
         }
     }
+    
+    dynamic var rect: Rect?
     
     // MARK: Private Properties
     static var containerView: UIView?
@@ -50,7 +49,7 @@ class SVTextBox: NSObject, SVTextBoxExports {
         
         rect = Rect(rectConfig: textBoxConfig.valueForProperty("rect"))
         
-        textField = UITextField(frame: rect.cgRect)
+        textField = UITextField(frame: rect!.cgRect)
         textField.placeholder = placeholder
         textField.font = UIFont.systemFontOfSize(15)
         textField.borderStyle = UITextBorderStyle.RoundedRect

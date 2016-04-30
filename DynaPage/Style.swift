@@ -1,28 +1,32 @@
 //
-//  Rect.swift
+//  Style.swift
 //  ScriptView
 //
-//  Created by Evren Yortuçboylu on 14/04/16.
+//  Created by Evren Yortuçboylu on 30/04/16.
 //  Copyright © 2016 Evren Yortuçboylu. All rights reserved.
 //
 
+/*
 import UIKit
 import JavaScriptCore
 
-@objc protocol RectExports: JSExport {
-    var x: CGFloat { get set }
-    var y: CGFloat { get set }
-    var width: CGFloat { get set }
-    var height: CGFloat { get set }
+@objc protocol StyleExports: JSExport {
     
-    static func create(rectConfig: JSValue) -> Rect
+    var borderWidth: CGFloat? {get set}
+    var borderColor: String? {get set}
+    var backgroundColor: String? {get set}
+    var cornerRadius: CGColor? {get set}
+    
+    static func create(rectConfig: JSValue) -> Style
 }
 
-class Rect: NSObject, RectExports {
-    dynamic var x: CGFloat
-    dynamic var y: CGFloat
-    dynamic var width: CGFloat
-    dynamic var height: CGFloat
+class Style: NSObject, StyleExports {
+    
+    dynamic var borderWidth: CGFloat
+    dynamic var borderColor: String
+    dynamic var backgroundColor: String
+    dynamic var cornerRadius: CGColor
+
     
     var cgRect: CGRect {
         return CGRectMake(x, y, width, height)
@@ -53,4 +57,6 @@ class Rect: NSObject, RectExports {
     static func create(rectConfig: JSValue) -> Rect {
         return Rect(rectConfig: rectConfig)
     }
-}
+
+    
+}*/

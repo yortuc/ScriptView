@@ -12,15 +12,12 @@ import JavaScriptCore
 
 @objc protocol SVLabelExports: JSExport, UITextFieldDelegate {
     var text: String { get set }
-    var x: Int { get set }
-    var y: Int { get set }
-    var width: Int { get set }
-    var height: Int { get set }
+    var rect: Rect? { get set }
     
     static func create(buttonBoxConfig: JSValue) -> SVLabel
 }
 
-class SVLabel: NSObject, SVLabelExports {
+class SVLabel: NSObject, SVLabelExports, SVComponent {
     
     // MARK: Interface Properties
     dynamic var text: String = "Button" {
@@ -30,26 +27,24 @@ class SVLabel: NSObject, SVLabelExports {
         }
     }
     
-    dynamic var x:Int = 50
-    dynamic var y:Int = 100
-    dynamic var width:Int = 100
-    dynamic var height:Int = 30
+    dynamic var rect: Rect?
     
     // MARK: Private Properties
     static var containerView: UIView?
     private var label: UILabel!
     
+    var localView: UIView? {
+        return self.label
+    }
+    
     init(labelConfig: JSValue, view: UIView){
         super.init()
         
         let text = labelConfig.valueForProperty("text").toString()
-        let x = CGFloat((labelConfig.valueForProperty("x")?.toDouble())!)
-        let y = CGFloat((labelConfig.valueForProperty("y")?.toDouble())!)
-        let w = CGFloat((labelConfig.valueForProperty("width")?.toDouble())!)
-        let h = CGFloat((labelConfig.valueForProperty("height")?.toDouble())!)
+        let rect = Rect(rectConfig: labelConfig.valueForProperty("rect"))
         
-        label = UILabel(frame: CGRectMake(x, y, w, h))
-        label.center = CGPointMake(x + w/2, y + h/2)
+        label = UILabel(frame: rect.cgRect)
+        label.center = CGPointMake(rect.x + rect.width/2, rect.y + rect.height/2)
         label.textAlignment = NSTextAlignment.Center
         label.text = text
 
