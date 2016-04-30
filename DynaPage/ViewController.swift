@@ -19,6 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.scriptView = ScriptView(view: self.view)
+        self.scriptView = ScriptView(view: self.view, scriptName: "githubExplorer")
     }
 }

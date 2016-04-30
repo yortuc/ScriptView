@@ -14,13 +14,15 @@ class ScriptView {
     private var context = JSContext()
 
     // MARK: Public Functions
+    private var download: @convention(block) String -> String = {_ in return "" }
     private var require: @convention(block) String -> JSValue = {_ in return JSValue()}
     private var log: @convention(block) String -> Void = { _ in }
+    private var present: @convention(block) UIViewController -> Void = { _ in }
     
-    init(view: UIView){
+    init(view: UIView, scriptName: String){
         self.registerPublicFuncs()
         self.registerControls(view)
-        require("main")
+        require(scriptName)
     }
     
     func reload(){
@@ -54,6 +56,34 @@ class ScriptView {
             print("\(text)")
         }
         
+        download = { url in
+            print("downloading \(url)")
+            if let data = NSData(contentsOfURL: NSURL(string: url)!) {
+                let datastring = NSString(data: data, encoding: NSUTF8StringEncoding) as! String
+                return datastring
+            }
+            else{
+                print("data cannot be downloaded")
+                return "no-data"
+            }
+        }
+        
+        present = { viewController in
+            if var topController = UIApplication.sharedApplication().keyWindow?.rootViewController {
+                while let presentedViewController = topController.presentedViewController {
+                    topController = presentedViewController
+                }
+                
+                let navController = topController as! UINavigationController
+                
+                print("presenting viewController on \(topController)")
+                navController.pushViewController(viewController, animated: true)
+                // topController.presentViewController(viewController, animated: true, completion: nil)
+            }
+        }
+        
+        context.setObject(unsafeBitCast(present, AnyObject.self), forKeyedSubscript: "present")
+        context.setObject(unsafeBitCast(download, AnyObject.self), forKeyedSubscript: "download")
         context.setObject(unsafeBitCast(require, AnyObject.self), forKeyedSubscript: "require")
         context.setObject(unsafeBitCast(log, AnyObject.self), forKeyedSubscript: "log")
     }
@@ -71,6 +101,7 @@ class ScriptView {
         context.setObject(unsafeBitCast(Rect.self, AnyObject.self), forKeyedSubscript: "Rect")
         
         context.setObject(unsafeBitCast(SVView.self, AnyObject.self), forKeyedSubscript: "View")
+        context.setObject(unsafeBitCast(SVTableView.self, AnyObject.self), forKeyedSubscript: "TableView")
         
         RootView.rect = Rect(cgRect: view.frame)
         context.setObject(unsafeBitCast(RootView.self, AnyObject.self), forKeyedSubscript: "RootView")

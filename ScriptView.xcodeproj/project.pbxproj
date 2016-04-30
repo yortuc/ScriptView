@@ -23,6 +23,9 @@
 		15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEA1CD4A1B0005BE6CC /* SVView.swift */; };
 		15FE2FED1CD4A730005BE6CC /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEC1CD4A730005BE6CC /* Style.swift */; };
 		15FE2FEF1CD515EC005BE6CC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FEE1CD515EC005BE6CC /* README.md */; };
+		15FE2FF11CD53D1E005BE6CC /* githubExplorer.js in Resources */ = {isa = PBXBuildFile; fileRef = 15FE2FF01CD53D1E005BE6CC /* githubExplorer.js */; };
+		15FE2FF31CD541C1005BE6CC /* SVBasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */; };
+		15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF41CD5467B005BE6CC /* SVTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		15FE2FEA1CD4A1B0005BE6CC /* SVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVView.swift; path = DynaPage/SVView.swift; sourceTree = "<group>"; };
 		15FE2FEC1CD4A730005BE6CC /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Style.swift; path = DynaPage/Style.swift; sourceTree = "<group>"; };
 		15FE2FEE1CD515EC005BE6CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15FE2FF01CD53D1E005BE6CC /* githubExplorer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = githubExplorer.js; path = DynaPage/githubExplorer.js; sourceTree = "<group>"; };
+		15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVBasicTableViewController.swift; path = DynaPage/SVBasicTableViewController.swift; sourceTree = "<group>"; };
+		15FE2FF41CD5467B005BE6CC /* SVTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVTableView.swift; path = DynaPage/SVTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 				15D7B8C21CB742EB00EAF7B6 /* SVLabel.swift */,
 				159FABFC1CBFB59B0049941E /* RootView.swift */,
 				15FE2FEC1CD4A730005BE6CC /* Style.swift */,
+				15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */,
+				15FE2FF41CD5467B005BE6CC /* SVTableView.swift */,
 			);
 			name = Exposed;
 			sourceTree = "<group>";
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				15D7B8B61CB6AAFA00EAF7B6 /* main.js */,
+				15FE2FF01CD53D1E005BE6CC /* githubExplorer.js */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 				15D7B8AF1CB6AAEF00EAF7B6 /* LaunchScreen.storyboard in Resources */,
 				15D7B8AC1CB6AAEF00EAF7B6 /* Assets.xcassets in Resources */,
 				15D7B8AA1CB6AAEF00EAF7B6 /* Main.storyboard in Resources */,
+				15FE2FF11CD53D1E005BE6CC /* githubExplorer.js in Resources */,
 				15D7B8B71CB6AAFA00EAF7B6 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +208,7 @@
 				159FABFD1CBFB59B0049941E /* RootView.swift in Sources */,
 				15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */,
 				159FABF91CBF31E60049941E /* Rect.swift in Sources */,
+				15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
 				15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */,
 				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
@@ -205,6 +216,7 @@
 				15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */,
 				15D7B8B91CB6F12E00EAF7B6 /* ScriptView.swift in Sources */,
 				15FE2FEF1CD515EC005BE6CC /* README.md in Sources */,
+				15FE2FF31CD541C1005BE6CC /* SVBasicTableViewController.swift in Sources */,
 				15FE2FED1CD4A730005BE6CC /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

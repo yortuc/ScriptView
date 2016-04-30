@@ -52,4 +52,3 @@ var subLabel = Label.create({
 // add child views
 myView.addChild(subLabel);
 myView.addChild(mySubView);
-
