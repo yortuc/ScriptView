@@ -26,6 +26,8 @@
 		15FE2FF11CD53D1E005BE6CC /* githubExplorer.js in Resources */ = {isa = PBXBuildFile; fileRef = 15FE2FF01CD53D1E005BE6CC /* githubExplorer.js */; };
 		15FE2FF31CD541C1005BE6CC /* SVBasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */; };
 		15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF41CD5467B005BE6CC /* SVTableView.swift */; };
+		15FE2FF71CD893DD005BE6CC /* SVBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */; };
+		15FE2FF91CD8944F005BE6CC /* SVPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF81CD8944F005BE6CC /* SVPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		15FE2FF01CD53D1E005BE6CC /* githubExplorer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = githubExplorer.js; path = DynaPage/githubExplorer.js; sourceTree = "<group>"; };
 		15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVBasicTableViewController.swift; path = DynaPage/SVBasicTableViewController.swift; sourceTree = "<group>"; };
 		15FE2FF41CD5467B005BE6CC /* SVTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVTableView.swift; path = DynaPage/SVTableView.swift; sourceTree = "<group>"; };
+		15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVBasicViewController.swift; path = DynaPage/SVBasicViewController.swift; sourceTree = "<group>"; };
+		15FE2FF81CD8944F005BE6CC /* SVPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVPage.swift; path = DynaPage/SVPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				15FE2FEC1CD4A730005BE6CC /* Style.swift */,
 				15FE2FF21CD541C1005BE6CC /* SVBasicTableViewController.swift */,
 				15FE2FF41CD5467B005BE6CC /* SVTableView.swift */,
+				15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */,
+				15FE2FF81CD8944F005BE6CC /* SVPage.swift */,
 			);
 			name = Exposed;
 			sourceTree = "<group>";
@@ -209,8 +215,10 @@
 				15D7B8C11CB740A900EAF7B6 /* SVButton.swift in Sources */,
 				159FABF91CBF31E60049941E /* Rect.swift in Sources */,
 				15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */,
+				15FE2FF91CD8944F005BE6CC /* SVPage.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
 				15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */,
+				15FE2FF71CD893DD005BE6CC /* SVBasicViewController.swift in Sources */,
 				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
 				15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */,
 				15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */,

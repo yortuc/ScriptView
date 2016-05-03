@@ -12,6 +12,8 @@ import UIKit
 class SVBasicTableViewController: UITableViewController {
 
     var dataList: [String]?
+    
+    var onItemSelected: ((Int) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,12 @@ class SVBasicTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let onSelectedCallback = self.onItemSelected {
+            onSelectedCallback(indexPath.row)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

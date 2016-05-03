@@ -63,6 +63,10 @@ class SVTextBox: NSObject, SVTextBoxExports {
         let editedCallback = textBoxConfig.valueForProperty("edited")
         self.callbackEdited = JSManagedValue(value: editedCallback, andOwner: self)
         
+        if let text = textBoxConfig.valueForProperty("text")?.toString() {
+            textField.text = text
+        }
+        
         view.addSubview(textField)
     }
     

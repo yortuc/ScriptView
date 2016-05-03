@@ -102,6 +102,7 @@ class ScriptView {
         
         context.setObject(unsafeBitCast(SVView.self, AnyObject.self), forKeyedSubscript: "View")
         context.setObject(unsafeBitCast(SVTableView.self, AnyObject.self), forKeyedSubscript: "TableView")
+        context.setObject(unsafeBitCast(SVPageView.self, AnyObject.self), forKeyedSubscript: "PageView")
         
         RootView.rect = Rect(cgRect: view.frame)
         context.setObject(unsafeBitCast(RootView.self, AnyObject.self), forKeyedSubscript: "RootView")

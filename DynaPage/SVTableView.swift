@@ -29,6 +29,17 @@ class SVTableView: NSObject, SVTableViewExports {
         let tableViewController = sb.instantiateViewControllerWithIdentifier("SVBasicTableView") as! SVBasicTableViewController
         tableViewController.dataList = dataSource
         
+        if let onItemSelected = basicTableConfig.valueForProperty("onItemSelected") {
+            tableViewController.onItemSelected = { itemIndex in
+                print("item selected")
+                onItemSelected.callWithArguments([itemIndex])
+            }
+        }
+        
+        if let pageTitle = basicTableConfig.valueForProperty("title")?.toString() {
+            tableViewController.title = pageTitle
+        }
+        
         return tableViewController
     }
 }

@@ -60,8 +60,8 @@ class SVView: NSObject, SVViewExports, SVComponent {
             viewControl.layer.borderColor = hexToUIColor(borderColorProp.toString()).CGColor
         }
         
-        view.addSubview(viewControl)
-        viewControl.didMoveToSuperview()
+        //view.addSubview(viewControl)
+        //viewControl.didMoveToSuperview()
         
         self.localView = viewControl
     }
