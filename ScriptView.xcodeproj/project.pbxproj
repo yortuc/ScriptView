@@ -28,6 +28,9 @@
 		15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF41CD5467B005BE6CC /* SVTableView.swift */; };
 		15FE2FF71CD893DD005BE6CC /* SVBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */; };
 		15FE2FF91CD8944F005BE6CC /* SVPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FF81CD8944F005BE6CC /* SVPage.swift */; };
+		15FE2FFB1CD9E5C6005BE6CC /* SVCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FFA1CD9E5C5005BE6CC /* SVCustomTableViewCell.swift */; };
+		15FE2FFD1CD9E6AF005BE6CC /* SVCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FFC1CD9E6AF005BE6CC /* SVCustomTableViewController.swift */; };
+		15FE2FFF1CDA065F005BE6CC /* SVCustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE2FFE1CDA065E005BE6CC /* SVCustomTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		15FE2FF41CD5467B005BE6CC /* SVTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVTableView.swift; path = DynaPage/SVTableView.swift; sourceTree = "<group>"; };
 		15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVBasicViewController.swift; path = DynaPage/SVBasicViewController.swift; sourceTree = "<group>"; };
 		15FE2FF81CD8944F005BE6CC /* SVPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVPage.swift; path = DynaPage/SVPage.swift; sourceTree = "<group>"; };
+		15FE2FFA1CD9E5C5005BE6CC /* SVCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVCustomTableViewCell.swift; path = DynaPage/SVCustomTableViewCell.swift; sourceTree = "<group>"; };
+		15FE2FFC1CD9E6AF005BE6CC /* SVCustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVCustomTableViewController.swift; path = DynaPage/SVCustomTableViewController.swift; sourceTree = "<group>"; };
+		15FE2FFE1CDA065E005BE6CC /* SVCustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVCustomTableView.swift; path = DynaPage/SVCustomTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				15FE2FF41CD5467B005BE6CC /* SVTableView.swift */,
 				15FE2FF61CD893DD005BE6CC /* SVBasicViewController.swift */,
 				15FE2FF81CD8944F005BE6CC /* SVPage.swift */,
+				15FE2FFA1CD9E5C5005BE6CC /* SVCustomTableViewCell.swift */,
+				15FE2FFC1CD9E6AF005BE6CC /* SVCustomTableViewController.swift */,
+				15FE2FFE1CDA065E005BE6CC /* SVCustomTableView.swift */,
 			);
 			name = Exposed;
 			sourceTree = "<group>";
@@ -216,14 +225,17 @@
 				159FABF91CBF31E60049941E /* Rect.swift in Sources */,
 				15FE2FF51CD5467B005BE6CC /* SVTableView.swift in Sources */,
 				15FE2FF91CD8944F005BE6CC /* SVPage.swift in Sources */,
+				15FE2FFD1CD9E6AF005BE6CC /* SVCustomTableViewController.swift in Sources */,
 				15D7B8A71CB6AAEF00EAF7B6 /* ViewController.swift in Sources */,
 				15FE2FEB1CD4A1B0005BE6CC /* SVView.swift in Sources */,
 				15FE2FF71CD893DD005BE6CC /* SVBasicViewController.swift in Sources */,
+				15FE2FFF1CDA065F005BE6CC /* SVCustomTableView.swift in Sources */,
 				15D7B8C31CB742EB00EAF7B6 /* SVLabel.swift in Sources */,
 				15D7B8A51CB6AAEF00EAF7B6 /* AppDelegate.swift in Sources */,
 				15D7B8BF1CB73DA300EAF7B6 /* SVTextBox.swift in Sources */,
 				15D7B8B91CB6F12E00EAF7B6 /* ScriptView.swift in Sources */,
 				15FE2FEF1CD515EC005BE6CC /* README.md in Sources */,
+				15FE2FFB1CD9E5C6005BE6CC /* SVCustomTableViewCell.swift in Sources */,
 				15FE2FF31CD541C1005BE6CC /* SVBasicTableViewController.swift in Sources */,
 				15FE2FED1CD4A730005BE6CC /* Style.swift in Sources */,
 			);

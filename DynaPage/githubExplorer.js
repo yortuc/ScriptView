@@ -38,7 +38,7 @@ function listRepos(userName, repos){
        items: repoNames,
        onItemSelected: function(itemIndex) {
           log(repos[itemIndex].name);
-          showRepoDetails(repos[itemIndex]);
+          showRepoDetails2(repos[itemIndex]);
         }
     });
     
@@ -63,6 +63,43 @@ function showRepoDetails(repo){
         title: repo.name,
         rootView: pageRootView
     });
+    
+    present(pageRepoDetails);
+}
+
+function showRepoDetails2(repo){
+    
+    var items = [{ text: "Name", value: repo.name},
+                 { text: "Description", value: repo.description},
+                 { text: "Size", value: repo.size.toString() }];
+   
+    var pageRepoDetails = CustomTableView.create({
+                                          title: repo.name + " Details",
+                                          items: items,
+                                                onRenderRow: function(itemIndex) {
+                                                    var data = items[itemIndex];
+                                                
+                                                    var cellView = View.create({
+                                                       rect: Rect.create({x: 0, y: 0, width:320, height:200 }),
+                                                       backgroundColor: "#ffffff"
+                                                    });
+                                                
+                                                    var lblText = Label.create({
+                                                       rect: Rect.create({x: 0, y: 0, width:100, height:30}),
+                                                       text: data.text
+                                                    });
+                                                
+                                                    var lblValue = Label.create({
+                                                       rect: Rect.create({x: 70, y: 0, width:200, height:30}),
+                                                       text: data.value
+                                                    });
+                                                
+                                                    cellView.addChild(lblText);
+                                                    cellView.addChild(lblValue);
+                                                
+                                                    return cellView;
+                                                }
+                                          });
     
     present(pageRepoDetails);
 }
